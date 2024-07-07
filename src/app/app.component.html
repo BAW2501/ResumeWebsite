@@ -1,4 +1,27 @@
-<app-header></app-header>
-<app-work-experience></app-work-experience>
-<app-education></app-education>
-<app-projects/>
+<p-toast></p-toast>
+
+<div class="min-h-screen flex flex-col bg-gray-100">
+  <app-header class="shadow-md"></app-header>
+
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <p-tabView>
+      <p-tabPanel header="About">
+        <app-about></app-about>
+      </p-tabPanel>
+      <p-tabPanel header="Work Experience">
+        <app-work-experience></app-work-experience>
+      </p-tabPanel>
+      <p-tabPanel header="Education">
+        <app-education></app-education>
+      </p-tabPanel>
+      <p-tabPanel header="Projects">
+        <app-projects></app-projects>
+      </p-tabPanel>
+      <p-tabPanel header="Skills">
+        <app-skills></app-skills>
+      </p-tabPanel>
+    </p-tabView>
+  </main>
+
+  <app-footer></app-footer>
+</div>
