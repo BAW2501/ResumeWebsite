@@ -1,0 +1,14 @@
+<div class="container mx-auto p-4">
+  <h2 class="text-3xl font-bold mb-4">Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <p-card *ngFor="let repo of repositories">
+      <ng-template pTemplate="header">
+        <h3 class="text-xl font-semibold">{{ repo.name }}</h3>
+      </ng-template>
+      <ng-template pTemplate="content">
+        <p>{{ repo.description }}</p>
+        <a [href]="repo.html_url" target="_blank" class="text-blue-500">View Repository</a>
+      </ng-template>
+    </p-card>
+  </div>
+</div>

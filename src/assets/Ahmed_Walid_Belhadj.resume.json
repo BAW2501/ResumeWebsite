@@ -1,0 +1,398 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Ahmed Walid Belhadj",
+    "label": "Web Developer | Software Developer | AI/ML Engineer | Chess Enthusiast",
+    "image": "https://avatars.githubusercontent.com/u/80895522",
+    "email": "belhadj.ahmedwalid1@gmail.com",
+    "phone": "+213 561240358",
+    "url": "https://github.com/BAW2501",
+    "summary": "I am a dedicated Full-Stack Web Developer with a profound passion for artificial intelligence. Holding a Master degree in Artificial Intelligence, my mission is to integrate AI seamlessly into web applications.\nCore Skills:\nWeb Development: Proficient in building dynamic web applications using Angular, NestJS, Tailwind CSS, and Spring Boot. Capable of designing user interfaces and developing complex backend systems.\nArtificial Intelligence: Strong foundation in data science, machine learning, and statistical modeling. Experienced with Python and libraries such as TensorFlow and scikit-learn to create predictive models and actionable insights.\nData-Driven Decision Making: Skilled in analyzing complex datasets and creating visualizations using Python and SQL to drive informed decision-making.\nProfessional Traits:\nContinuous Learner: Committed to staying at the forefront of technological advancements through ongoing learning and research.\nInnovative Problem Solver: Always striving to push boundaries and tackle new challenges with a proactive approach.",
+    "location": {
+      "countryCode": "US",
+      "address": "Algeria"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "belhadjwalid",
+        "url": "https://www.linkedin.com/in/belhadjwalid/"
+      }
+      ,{
+        "network": "GitHub",
+        "username": "BAW2501",
+        "url": "https://github.com/BAW2501"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Genius Data ",
+      "position": "Full-stack Developer",
+      "startDate": "2023-10-31",
+      "endDate": "2024",
+      "highlights": [],
+      "summary": "Full Stack Development using Springboot/Angular stack",
+      "url": "https://www.linkedin.com/company/genius-data",
+      "location": "Tunis, Tunisia"
+    },
+    {
+      "name": "SIMPA Laboratory",
+      "position": "Research Assistant",
+      "startDate": "2023-01-31",
+      "endDate": "2023-05-31",
+      "highlights": [],
+      "summary": "Research Assistant internship in the title of a Master's thesis",
+      "url": "https://www.univ-usto.dz/labo/simpa",
+      "location": "Oran, Oran, Algeria"
+    },
+    {
+      "name": "BambooGeeks",
+      "position": "Trainee",
+      "startDate": "2021-11-30",
+      "endDate": "2023-01-31",
+      "highlights": [],
+      "summary": "",
+      "url": "https://www.linkedin.com/company/9190793",
+      "location": "Remote"
+    },
+    {
+      "name": "Freelance",
+      "position": "Freelance Web Developer",
+      "startDate": "2020-08-31",
+      "endDate": "2023-01-31",
+      "highlights": [],
+      "summary": "",
+      "url": "https://github.com/BAW2501",
+      "location": "Remote"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Lichess",
+      "position": "Mobile App Developer",
+      "startDate": "2024-02-12",
+      "endDate": "2024-03-31",
+      "summary": "Contibuting to the creation of a newer mobile app for the Lichess platform",
+      "url": "https://lichess.org",
+      "location": "Remote"
+    },{
+      "organization": "Mircosoft",
+      "position": "Software Developer",
+      "startDate": "2021-05-30",
+      "endDate": "2021-07-30",
+      "summary": "Contibuting to the Winget Package Manager Repository for Windows",
+      "url": "https://github.com/microsoft/winget-pkgs/pull/14648"
+    },
+    {
+      "organization": "TheAlgorithms",
+      "position": "Python Developer",
+      "startDate": "2023-09-30",
+      "endDate": "2023-10-30",
+      "summary": "Contributing to the Python Algorithms Repository by creating Reference Implementations to Popular Algorithms",
+      "url": "https://github.com/TheAlgorithms/Python/pull/9001"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Sciences and Technology University of Oran - Mohamed Boudiaf (USTO-MB)",
+      "area": "Artificial Intelligence",
+      "studyType": "Master's degree",
+      "startDate": "2021-10-31",
+      "endDate": "2023-07-31",
+      "score": "14.55/20",
+      "courses": [
+        "Machine Learning",
+        "Deep Learning",
+        "Data Science",
+        "Natural Language Processing",
+        "Computer Vision",
+        "Reinforcement Learning",
+        "Statistical Modeling",
+        "Data Mining",
+        "Big Data",
+        "Bioinformatics"
+      ]
+    },
+    {
+      "institution": "University of Mostaganem Abdel-Hamid ibn Badis (UMAB)",
+      "area": "Computer Science ,Information Systems",
+      "studyType": "Bachelor's degree",
+      "startDate": "2018-09-30",
+      "endDate": "2021-07-31",
+      "score": "15.55/20.00",
+      "courses": [
+        "Data Structures",
+        "Algorithms",
+        "Object-Oriented Programming",
+        "Web Development",
+        "Databases",
+        "Software Engineering",
+        "Computer Architecture",
+        "Information Systems",
+        "Computer Networks",
+        "Operating Systems",
+        "Artificial Intelligence"
+      ]
+    },
+    {
+      "institution": "Idriss Snoussi highschool",
+      "area": "Experimental Science",
+      "studyType": "High School Diploma",
+      "startDate": "2015-12-31",
+      "endDate": "2018-12-31",
+      "score": "13.95/20.00",
+      "courses": [
+        "Mathematics",
+        "Physics",
+        "Chemistry",
+        "Biology",
+        "Geology",
+        "Geography",
+        "Philosophy",
+        "Arabic",
+        "French",
+        "English"
+      ]
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Basic Proficiency in KNIME Analytics Platform",
+      "issuer": "KNIME",
+      "date": "2024-06-16",
+      "url": "https://www.credly.com/badges/28337026-763f-4970-a21d-7288a3a72269/linked_in_profile"
+    },
+    {
+      "name": "Baseline: Infrastructure",
+      "issuer": "Google",
+      "startDate": "2021-11-30",
+      "url": "https://www.cloudskillsboost.google/public_profiles/db960166-5b04-476f-b88e-861614c33f60/badges/1540040"
+    },
+    {
+      "name": "Cloud Engineering",
+      "issuer": "Google",
+      "startDate": "2021-11-30",
+      "url": "https://www.cloudskillsboost.google/public_profiles/db960166-5b04-476f-b88e-861614c33f60/badges/1539983"
+    },
+    {
+      "name": "Google Cloud Essentials",
+      "issuer": "Google",
+      "startDate": "2021-11-30",
+      "url": "https://www.cloudskillsboost.google/public_profiles/db960166-5b04-476f-b88e-861614c33f60/badges/1539698"
+    },
+    {
+      "name": "OK Google: Build Interactive Apps with Google Assistant",
+      "issuer": "Google",
+      "startDate": "2021-11-30",
+      "url": "https://www.cloudskillsboost.google/public_profiles/db960166-5b04-476f-b88e-861614c33f60/badges/1538668"
+    },
+    {
+      "name": "Workspace Essentials",
+      "issuer": "Google",
+      "url": "https://www.cloudskillsboost.google/public_profiles/db960166-5b04-476f-b88e-861614c33f60/badges/1538517"
+    },
+    {
+      "name": "Intermediate ML: TensorFlow on Google Cloud",
+      "issuer": "Google",
+      "startDate": "2021-11-30",
+      "url": "https://www.cloudskillsboost.google/public_profiles/db960166-5b04-476f-b88e-861614c33f60/badges/1538262"
+    },
+    {
+      "name": "Exploring APIs",
+      "issuer": "Google",
+      "url": "https://www.cloudskillsboost.google/public_profiles/db960166-5b04-476f-b88e-861614c33f60/badges/1537692"
+    },
+    {
+      "name": "Intro to ML: Language Processing",
+      "issuer": "Google",
+      "startDate": "2021-11-30",
+      "url": "https://www.cloudskillsboost.google/public_profiles/db960166-5b04-476f-b88e-861614c33f60/badges/1535971"
+    },
+    {
+      "name": "Intro to ML: Image Processing",
+      "issuer": "Google",
+      "startDate": "2021-11-30",
+      "url": "https://www.cloudskillsboost.google/public_profiles/db960166-5b04-476f-b88e-861614c33f60/badges/1535900"
+    },
+    {
+      "name": "Python Developer",
+      "issuer": "Zero To Mastery Academy",
+      "startDate": "2020-09-30"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "NestJS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "RxJS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Angular",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Angular CLI",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "AngularJS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "NumPy",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TensorFlow",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Bioinformatics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Laravel",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Scikit-Learn",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Machine Learning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Angular Material",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Full-Stack Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Sequence Alignment",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Vue.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Back-End Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Analytical Skills",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Artificial Intelligence (AI)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python (Programming Language)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Biotechnology",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "French",
+      "fluency": "Professional Working Proficiency"
+    },
+    {
+      "language": "Arabic",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Chess",
+      "keywords": [
+        
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "keywords": []
+    },
+    {
+      "name": "Artificial Intelligence",
+      "keywords": []
+    },
+    {
+      "name": "Data Science",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "keywords": []
+    },
+    {
+      "name": "Bioinformatics",
+      "keywords": []
+    }
+  ],
+  "references": [
+  ],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+
+}

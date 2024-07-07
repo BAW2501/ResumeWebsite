@@ -1,0 +1,10 @@
+<div class="container mx-auto p-4">
+  <h2 class="text-3xl font-bold">Work Experience</h2>
+  <div *ngFor="let job of work" class="p-4 bg-white rounded shadow my-4">
+    <h3 class="text-xl font-semibold">{{ job.position }}</h3>
+    <p>{{ job.name }}</p>
+    <p>{{ job.startDate }} - {{ job.endDate }}</p>
+    <p>{{ job.location }}</p>
+    <a [href]="job.url" target="_blank" class="text-blue-500">Company Link</a>
+  </div>
+</div>
