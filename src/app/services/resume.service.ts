@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, catchError } from 'rxjs/operators';
 import * as resume from '../../assets/Ahmed_Walid_Belhadj.resume.json';
 
 @Injectable({
@@ -23,7 +23,11 @@ export class ResumeService {
         'CrossFrameworkComponents', 'Neural_HyperParam_MetaHeuristic_Optimization',
         'AirBnB_Clone_React', 'Monte_Carlo_Tree-Search_Tic_Tac_Toe',
         'Arabic-Handwritten-Characters-Dataset'
-      ].includes(repo.name)))
+      ].includes(repo.name))),
+      catchError(error => {
+        console.error('Error fetching repositories:', error);
+        return [];
+      })
     );
   }
 }
