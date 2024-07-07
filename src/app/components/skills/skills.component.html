@@ -1,0 +1,9 @@
+<p-panel header="Skills">
+  <div class="grid">
+    <div *ngFor="let skill of skills" class="col-12 md:col-6 lg:col-4">
+      <p-card [header]="skill.name">
+        <p-progressBar [value]="getRandomSkillLevel()"></p-progressBar>
+      </p-card>
+    </div>
+  </div>
+</p-panel>
