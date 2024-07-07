@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  font-family: var(--font-family), serif;
+}
+
+.customized-timeline .p-timeline-event-content,
+.customized-timeline .p-timeline-event-opposite {
+  line-height: 1.5;
+}
+
+.customized-timeline .p-card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.p-tabview-nav {
+  justify-content: center;
+}
+
+.p-tabview-nav li .p-tabview-nav-link {
+  background-color: #f3f4f6;
+}
+
+.p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+/* Add these to your global styles.css or the component's CSS file */
+
+.p-dataview .p-dataview-header {
+  background: transparent;
+  border: none;
+  padding: 1.5rem 1rem 0 1rem;
+}
+
+.p-dataview .p-dataview-content {
+  background: transparent;
+  border: none;
+  padding: 0 1rem;
+}
+
+.p-dataview .p-paginator {
+  background: transparent;
+  border: none;
+  padding: 1rem;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}

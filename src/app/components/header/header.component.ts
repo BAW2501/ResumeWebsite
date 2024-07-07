@@ -1,21 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ResumeService } from '../../services/resume.service';
-import {NgForOf, NgOptimizedImage} from "@angular/common";
+import { ToolbarModule } from 'primeng/toolbar';
+import { AvatarModule } from 'primeng/avatar';
+import { ButtonModule } from 'primeng/button';
+import { NgForOf } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   standalone: true,
   imports: [
-    NgForOf,
-    NgOptimizedImage
+    ToolbarModule,
+    AvatarModule,
+    ButtonModule,
+    NgForOf
   ],
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
- resume = this.resumeService.getResume();
+  resume = this.resumeService.getResume();
 
   constructor(private resumeService: ResumeService) { }
 
-
+  navigateToProfile(url: string) {
+    window.open(url, '_blank');
+  }
 }

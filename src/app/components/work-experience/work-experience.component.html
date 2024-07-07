@@ -1,10 +1,19 @@
-<div class="container mx-auto p-4">
-  <h2 class="text-3xl font-bold">Work Experience</h2>
-  <div *ngFor="let job of work" class="p-4 bg-white rounded shadow my-4">
-    <h3 class="text-xl font-semibold">{{ job.position }}</h3>
-    <p>{{ job.name }}</p>
-    <p>{{ job.startDate }} - {{ job.endDate }}</p>
-    <p>{{ job.location }}</p>
-    <a [href]="job.url" target="_blank" class="text-blue-500">Company Link</a>
-  </div>
-</div>
+<p-timeline [value]="work" align="alternate" styleClass="customized-timeline">
+  <ng-template pTemplate="content" let-job>
+    <p-card [header]="job.position" [subheader]="job.name" class="shadow-lg">
+      <ng-template pTemplate="header">
+        <div class="bg-primary p-3">
+          <h3 class="text-xl font-semibold text-white">{{ job.position }}</h3>
+          <h4 class="text-lg text-white-alpha-70">{{ job.name }}</h4>
+        </div>
+      </ng-template>
+      <div class="p-3">
+        <p-tag [value]="job.startDate + ' - ' + (job.endDate || 'Present')" severity="info" class="mb-3"></p-tag>
+        <p class="mt-3 text-gray-600">{{ job.summary }}</p>
+      </div>
+      <ng-template pTemplate="footer">
+        <p-button [label]="'Visit ' + job.name" icon="pi pi-external-link" (onClick)="navigateToUrl(job.url)" class="p-button-outlined"></p-button>
+      </ng-template>
+    </p-card>
+  </ng-template>
+</p-timeline>
