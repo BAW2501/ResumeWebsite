@@ -45,7 +45,7 @@ export default function ProjectsPage() {
             image={project.image}
             technologies={project.technologies}
             githubUrl={project.githubUrl}
-            liveUrl={project.liveUrl}
+            liveUrl={''}
           />
         ))}
       </div>
