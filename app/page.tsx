@@ -1,101 +1,99 @@
-import Image from "next/image";
+"use client"
+
+import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { ArrowRight, Code2, Brain, Database } from "lucide-react"
+import Link from "next/link"
+import Image from "next/image"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col gap-8 pb-8">
+      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
+          <Image
+            src="https://avatars.githubusercontent.com/u/80895522"
+            alt="Ahmed Walid Belhadj"
+            width={150}
+            height={150}
+            className="rounded-full"
+          />
+          <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
+            Ahmed Walid Belhadj
+          </h1>
+          <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
+            Full-Stack Web Developer & AI Engineer
+          </p>
+          <div className="space-x-4">
+            <Button asChild>
+              <Link href="/projects">
+                View Projects <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+            <Button variant="outline" asChild>
+              <Link href="/contact">Contact Me</Link>
+            </Button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      <section className="container space-y-6 py-8 dark:bg-transparent md:py-12 lg:py-24">
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+            Skills
+          </h2>
+        </div>
+        <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
+          <Card className="flex flex-col items-center justify-center p-6">
+            <Code2 className="h-12 w-12 mb-4" />
+            <h3 className="text-xl font-bold">Web Development</h3>
+            <p className="text-sm text-muted-foreground text-center mt-2">
+              Angular, NestJS, Spring Boot, React
+            </p>
+          </Card>
+          <Card className="flex flex-col items-center justify-center p-6">
+            <Brain className="h-12 w-12 mb-4" />
+            <h3 className="text-xl font-bold">AI & ML</h3>
+            <p className="text-sm text-muted-foreground text-center mt-2">
+              TensorFlow, scikit-learn, PyTorch
+            </p>
+          </Card>
+          <Card className="flex flex-col items-center justify-center p-6">
+            <Database className="h-12 w-12 mb-4" />
+            <h3 className="text-xl font-bold">Data Science</h3>
+            <p className="text-sm text-muted-foreground text-center mt-2">
+              Python, SQL, Data Analysis
+            </p>
+          </Card>
+        </div>
+      </section>
+
+      <section className="container space-y-6 py-8 dark:bg-transparent md:py-12 lg:py-24">
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+            Featured Projects
+          </h2>
+        </div>
+        <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-2">
+          {/* Add your featured projects here */}
+          <Card className="p-6">
+            <h3 className="text-xl font-bold mb-2">Lichess Mobile App</h3>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <Badge>Flutter</Badge>
+              <Badge>Dart</Badge>
+              <Badge>Chess</Badge>
+            </div>
+            <p className="text-sm text-muted-foreground mb-4">
+              Contributing to the development of a new mobile app for the Lichess platform
+            </p>
+            <Button variant="outline" className="w-full" asChild>
+              <Link href="https://lichess.org">View Project</Link>
+            </Button>
+          </Card>
+          {/* Add more featured projects */}
+        </div>
+      </section>
     </div>
-  );
+  )
 }
