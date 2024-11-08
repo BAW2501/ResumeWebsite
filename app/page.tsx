@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Code2, Brain, Database } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { ArrowRight, Code2, Brain, Database } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-8 pb-8">
+    <div className="flex flex-col items-center gap-8 pb-8">
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
           <Image
@@ -85,15 +85,18 @@ export default function Home() {
               <Badge>Chess</Badge>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              Contributing to the development of a new mobile app for the Lichess platform
+              Contributing to the development of a new mobile app for the
+              Lichess platform
             </p>
             <Button variant="outline" className="w-full" asChild>
-              <Link href="https://lichess.org">View Project</Link>
+              <Link href="https://github.com/lichess-org/mobile">
+                View Project
+              </Link>
             </Button>
           </Card>
           {/* Add more featured projects */}
         </div>
       </section>
     </div>
-  )
+  );
 }
